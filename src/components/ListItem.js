@@ -69,7 +69,7 @@ class ListItem extends PureComponent {
         {this.state.isEditing ? (
           <input value={this.state.tags} name="tags" onChange={this.onChange} />
         ) : (
-          <p>{tags}</p>
+          <p>{tags.split(',')}</p>
         )}
       </li>
     );
